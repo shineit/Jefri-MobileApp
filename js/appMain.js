@@ -83,7 +83,7 @@ var app = {
         var socket = io.connect( namesp.models.serverUrl);         // create new websocket
 
         socket.on( 'notification', function( data, ackFunc) {
-            console.log( "data.newPage " + data.newPage);
+            console.log( "data.newPage " + data.pushType);
 
             switch( data.pushType) {
                 case "PageChng":
